@@ -1,0 +1,24 @@
+// This file is gonna look like dogshit for a while
+
+#carousel{
+	top: 50%;
+}
+
+.item{
+	text-align: center;
+}
+.item img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("../font/rationale-webfont.woff");
+}
+
+.header{
+	text-align: center;
+	font-family: myFirstFont;
+}
