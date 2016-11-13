@@ -8,54 +8,89 @@
 <body>
   <!-- Search Bar -->
   <div>
-    <div>
-      <select id="province_selector" onchange="provinceChanged()">
-        <option value="NB">New Brunswick</option>
-        <option value="ON">Ontario</option>
-        <option value="NS">Nova Scotia</option>
-      </select>
-    </div>
-    <div>
-      <select id="school_selector">
-        <option value="UNB" data-prov="NB">University of New Brunswick</option>
-        <option value="UO" data-prov="ON">University of Ottawa</option>
-        <option value="CU" data-prov="ON">Carleton University</option>
-        <option value="DU" data-prov="NS">Dalhouse University</option>
-      </select>
-    </div>
-    <div>
-      <button type="button">Search</button>
-    </div>
+    <table style='margin:0 auto;'>
+      <tr>
+        <td>Province</td> <td>School</td>
+      </tr>
+      <tr>
+        <td>
+          <select id="province_selector" onchange="provinceChanged()">
+            <option value="NB">New Brunswick</option>
+            <option value="ON">Ontario</option>
+            <option value="NS">Nova Scotia</option>
+          </select>
+        </td>
+        <td>
+          <select id="school_selector" onchange="schoolSelected()">
+            <option value="UNB" data-prov="NB">University of New Brunswick</option>
+            <option value="UO" data-prov="ON">University of Ottawa</option>
+            <option value="CU" data-prov="ON">Carleton University</option>
+            <option value="DU" data-prov="NS">Dalhouse University</option>
+          </select>
+        </td>
+      </tr>
+
+      </table>
   </div>
   <div>
-  <!-- TABLE SCHEMATIC NICK -->
-  <table border="1" style='margin: 0 auto;' data-table="UNB">
-    <tr>
-      <td colspan=2>
-        <img src="img/sample-icon.png" alt="UNB">
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h3>Details</h3>
-        <ul>
-          <li>Location: Fredericton, New Brunswick</li>
-          <li>Established idk</li>
-          <li>Price: >9000</li>
-          <li>Residence Cost: idk</li>
-        </ul>
-        <h3>High School Requirements:</h3>
-        <ul>
-          <li>Average of 70%</li>
-        </ul>
-      </td>
-      <td>
-        <h3>Overview</h3>
-        <p>This is an overview of my ass</p>
-      </td>
-    </tr>
-  </table>
-  <!-- END TABLE SCHEMATIC -->
+    <!-- UNB Nick: copy from here to the next comment-->
+    <table class="university_panel" data-table="UNB">
+      <tr>
+        <td colspan=2>
+            <h2 style='text-align:center;'>University of New Brunswick</h2>
+          <img class='crest' src="img/sample-icon.png" alt="UNB">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Details</h3>
+          <ul>
+            <li>Location: Fredericton, New Brunswick</li>
+            <li>Established idk</li>
+            <li>Price: >9000</li>
+            <li>Residence Cost: idk</li>
+          </ul>
+          <h3>High School Requirements:</h3>
+          <ul>
+            <li>Average of 70%</li>
+            <li>Completion of Calculus
+          </ul>
+        </td>
+        <td>
+          <h3>Overview</h3>
+          <p>This is an overview of my ass</p>
+        </td>
+      </tr>
+    </table>
+    <!-- UO -->
+    <table class="university_panel" data-table="UO">
+      <tr>
+        <td colspan=2>
+            <h2 style='text-align:center;'>University of Ottawa</h2>
+          <img class='crest' src="img/sample-icon.png" alt="UO">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>Details</h3>
+          <ul>
+            <li>Location: Fredericton, New Brunswick</li>
+            <li>Established idk</li>
+            <li>Price: >9000</li>
+            <li>Residence Cost: idk</li>
+          </ul>
+          <h3>High School Requirements:</h3>
+          <ul>
+            <li>Average of 70%</li>
+            <li>Completion of Calculus
+          </ul>
+        </td>
+        <td>
+          <h3>Overview</h3>
+          <p>This is an overview of my ass</p>
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
 </html>

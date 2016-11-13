@@ -20,3 +20,5 @@ function provinceChanged(){
     else elem.hide();
   });
 }
+
+function schoolSelected()

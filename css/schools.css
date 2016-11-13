@@ -1,4 +1,15 @@
-// This file is gonna look like dogshit for a while
+
 .title{
 	text-decoration: underline;
+}
+
+.university_panel{
+	margin: 0 auto;
+	width:80%;
+}
+
+.crest{
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
 }
