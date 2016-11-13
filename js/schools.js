@@ -10,8 +10,7 @@ $(function(){
 
 function provinceChanged(){
   var province = $("#province_selector").find("option:selected").val();
-  var list_elements = $("#school_selector").find('option');
-  list_elements.each(function(e){
+  $("#school_selector").find('option').each(function(e){
     var elem = $(this);
     if(elem.data('prov') == province){
       elem.show();
@@ -21,4 +20,13 @@ function provinceChanged(){
   });
 }
 
-function schoolSelected()
+function schoolSelected(){
+  var school = $("#school_selector").find("option:selected").val();
+  $(".university_panel").each(function(e){
+    var elem = $(this);
+    if(elem.data('school') == school){
+      elem.show();
+    }
+    else elem.hide();
+  });
+}
