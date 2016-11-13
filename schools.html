@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  	<link rel="stylesheet" type="text/css" href="css/schools.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/schools.js"></script>
+</head>
+<body>
+  <!-- Search Bar -->
+  <div>
+    <div>
+      <select id="province_selector" onchange="provinceChanged()">
+        <option value="NB">New Brunswick</option>
+        <option value="ON">Ontario</option>
+        <option value="NS">Nova Scotia</option>
+      </select>
+    </div>
+    <div>
+      <select id="school_selector">
+        <option value="UNB" data-prov="NB">University of New Brunswick</option>
+        <option value="UO" data-prov="ON">University of Ottawa</option>
+        <option value="CU" data-prov="ON">Carleton University</option>
+        <option value="DU" data-prov="NS">Dalhouse University</option>
+      </select>
+    </div>
+    <div>
+      <button type="button">Search</button>
+    </div>
+  </div>
+  <div>
+  <!-- TABLE SCHEMATIC NICK -->
+  <table border="1" style='margin: 0 auto;' data-table="UNB">
+    <tr>
+      <td colspan=2>
+        <img src="img/sample-icon.png" alt="UNB">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3 class="title">Details</h3 class="title">
+        <ul>
+          <li>Location: Fredericton, New Brunswick</li>
+          <li>Established idk</li>
+          <li>Price: >9000</li>
+          <li>Residence Cost: idk</li>
+        </ul>
+        <h3 class="title">High School Requirements:</h3 class="title">
+        <ul>
+          <li>Average of 70%</li>
+        </ul>
+      </td>
+      <td>
+        <h3 class="title">Overview</h3 class="title">
+        <p>This is an overview of my ass</p>
+      </td>
+    </tr>
+  </table>
+  <!-- END TABLE SCHEMATIC -->
+  </div>
+</body>
+</html>
