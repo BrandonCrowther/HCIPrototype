@@ -2,9 +2,11 @@ $(function(){
   // Copy iframe sample and embed each youtube iframe into the skeleton
   // be sure to add /embed/ to the url
   var videos =
-  {
-    "https://www.youtube.com/embed/CLishDbwy9c": "Rap TestTag", //these are tags to use for filtering. Add your own easily
-    "https://www.youtube.com/embed/NUC2EQvdzmY": "StillRap StillRap"
+  { //this is a hash with the video urls as keys and the search tags as values separated by spaces
+    "https://www.youtube.com/embed/CLishDbwy9c": "Rap TestTag",
+    "https://www.youtube.com/embed/NUC2EQvdzmY": "StillRap StillRap",
+    "https://www.youtube.com/embed/d0e8Q4JOVeM": "Coding",
+    "https://www.youtube.com/embed/wUtG93BebJ4": "Whitewashing"
   };
   var iframeSample = $('#sample_iframe iframe');
   var container = $('#video_panel')

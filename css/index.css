@@ -1,16 +1,21 @@
-// This file is gonna look like dogshit for a while
-
-#carousel{
-	top: 50%;
+.container{
+	line-height: 300px;
+}
+.carousel-bg .carousel-inner .item {
+  background-color: darkslategrey;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
 }
 
 .item{
 	text-align: center;
-}
-.item img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: darkslategrey;
+	min-height: 600px;
 }
 
 @font-face {
@@ -18,7 +23,25 @@
     src: url("../font/rationale-webfont.woff");
 }
 
+.vertical_center{
+		line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+
+		text-align: center;
+		margin-top: 20px;
+		font-size: 36px;
+		padding: 10px;
+		text-shadow: 2px 2px #000;
+		color: #FFF;
+}
+
 .header{
 	text-align: center;
 	font-family: myFirstFont;
+}
+
+#carousel{
+	border-top: 1px;
+	border-bottom: 1px;
 }
