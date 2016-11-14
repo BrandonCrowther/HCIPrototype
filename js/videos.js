@@ -22,7 +22,7 @@ $(function(){
     $('#search_bar').select2();
   });
 
-  $('#search_button').on('click', function(){
+  $('#search_bar').on('change', function(){
     $('.video').each(function(){
       var video = $(this);
       if (video.data('tags').search($("#search_bar").val()) >= 0){

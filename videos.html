@@ -1,18 +1,28 @@
 <!doctype html>
 <html>
 <head>
-  	<link rel="stylesheet" type="text/css" href="">
+  	<link rel="stylesheet" type="text/css" href="css/videos.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script type="text/javascript" src="js/videos.js"></script>
 </head>
 <body>
-  <div class="search_area">
-    <select id="search_bar" style='width:250px;'>
-      <option selected disabled hidden style='display: none' value=''></option>
-    </select>
-    <button id='search_button'>Search</button>
+  <div>
+    <table class="search_table">
+      <tr>
+        <td>
+          Search for a Topic:
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select id="search_bar" style='width:250px;'>
+            <option selected disabled hidden style='display:none' value=''></option>
+          </select>
+        </td>
+      </tr>
+    </table>
   </div>
   <!-- This div contains the sample iframe we're gonna use as a template to create video boxes -->
   <div style="display:none;" id="sample_iframe">
