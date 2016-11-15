@@ -36,6 +36,10 @@
 	padding: 10px;
 	margin: 5px;
 }
+.hand{
+	cursor: hand;
+	cursor: pointer;
+}
 h2{
 	line-height: normal;
 	display: inline-block;
@@ -50,4 +54,13 @@ h2{
 
 iframe{
 	padding:10px;
+}
+.no_borders{
+	background:rgba(255,255,255,0.6);
+	border:0px;
+	padding: 30px;
+}
+
+.no_borders td{
+	padding:15px;
 }
