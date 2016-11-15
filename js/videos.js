@@ -13,21 +13,25 @@ $(function(){
     "https://www.youtube.com/embed/uw28disTaHg": "All Minecraft"
   };
   var iframeSample = $('#sample_iframe iframe');
-  var container = $('#video_panel')
+  var container = $('#video_panel');
+  var tags = [];
   Object.keys(videos).forEach(function(ele){
     iframeSample.attr('src', ele);
     iframeSample.attr('data-tags', videos[ele]);
     container.append(iframeSample.clone());
-    videos[ele].split(" ").filter(onlyUnique).forEach(function(tag){
-      if($('#search_bar option').length > 0){
-      $('#search_bar')
-        .append($("<option>")
-          .text(tag)
-          .val(tag));
-        }
-    });
     iframeSample.remove();
+    videos[ele].split(" ").map(function(tag){
+      tags.push(tag);
+    })
     $('#search_bar').select2();
+  });
+
+  tags = tags.filter(function(item, i, ar){ return ar.indexOf(item) === i; });
+  tags.forEach(function(tag){
+    $('#search_bar')
+      .append($("<option>")
+        .text(tag)
+        .val(tag));
   });
 
   $('#search_bar').on('change', function(){
@@ -41,7 +45,3 @@ $(function(){
   });
 
 });
-
-function onlyUnique(value, index, self) {
-    return self.indexOf(value) === index;
-}
