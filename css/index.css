@@ -19,10 +19,6 @@
 	line-height: 300px;
 }
 
-@font-face {
-    font-family: myFirstFont;
-    src: url("../font/rationale-webfont.woff");
-}
 
 .vertical_center{
 		line-height: normal;
@@ -43,7 +39,7 @@
 
 .header{
 	text-align: center;
-	font-family: myFirstFont;
+	color: black;
 }
 
 #carousel{
