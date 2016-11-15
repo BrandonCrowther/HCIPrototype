@@ -16,6 +16,7 @@
 	background-size: cover;
 	background-color: darkslategrey;
 	min-height: 600px;
+	line-height: 300px;
 }
 
 @font-face {
