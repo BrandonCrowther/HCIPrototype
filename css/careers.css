@@ -16,6 +16,9 @@
 		margin: 0 auto;
 }
 
+h2 {
+  text-indent: 6px;
+}
 
 .job_plate{
 	text-align: center;
@@ -40,6 +43,7 @@
 	cursor: hand;
 	cursor: pointer;
 }
+
 h2{
 	line-height: normal;
 	display: inline-block;
@@ -59,6 +63,7 @@ iframe{
 	background:rgba(255,255,255,0.6);
 	border:0px;
 	padding: 30px;
+	margin: 0 auto;
 }
 
 .no_borders td{
