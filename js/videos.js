@@ -3,10 +3,14 @@ $(function(){
   // be sure to add /embed/ to the url
   var videos =
   { //this is a hash with the video urls as keys and the search tags as values separated by spaces
-    "https://www.youtube.com/embed/CLishDbwy9c": "Rap TestTag",
-    "https://www.youtube.com/embed/NUC2EQvdzmY": "StillRap StillRap",
-    "https://www.youtube.com/embed/d0e8Q4JOVeM": "Coding",
-    "https://www.youtube.com/embed/wUtG93BebJ4": "Whitewashing"
+    "https://www.youtube.com/embed/xgakdcEzVwg": "All Minecraft",
+    "https://www.youtube.com/embed/0eYbNYvZZoc": "All Careers",
+    "https://www.youtube.com/embed/N05CMCpXwkQ": "All Careers",
+    "https://www.youtube.com/embed/NtdiH24_OTk": "All Universities",
+    "https://www.youtube.com/embed/pvAsqPbz9Ro": "All Coding",
+    "https://www.youtube.com/embed/55jADN4Y7Pg": "All Minecraft Coding",
+    "https://www.youtube.com/embed/AYFlEyKMp-c": "All Universities",
+    "https://www.youtube.com/embed/uw28disTaHg": "All Minecraft"
   };
   var iframeSample = $('#sample_iframe iframe');
   var container = $('#video_panel')
