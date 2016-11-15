@@ -19,10 +19,12 @@ $(function(){
     iframeSample.attr('data-tags', videos[ele]);
     container.append(iframeSample.clone());
     videos[ele].split(" ").filter(onlyUnique).forEach(function(tag){
+      if($('#search_bar option').length > 0){
       $('#search_bar')
         .append($("<option>")
           .text(tag)
           .val(tag));
+        }
     });
     iframeSample.remove();
     $('#search_bar').select2();
